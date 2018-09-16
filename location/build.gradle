@@ -33,7 +33,7 @@ dependencies {
 }
 
 publish {
-    artifactId = 'aop-plugin'
+    artifactId = 'location'
     userOrg = rootProject.userOrg
     groupId = rootProject.groupId
     uploadName = rootProject.uploadName
