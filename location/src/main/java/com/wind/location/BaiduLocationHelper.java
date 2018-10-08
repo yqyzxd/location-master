@@ -7,6 +7,10 @@ import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
+import com.baidu.location.Poi;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by wind on 2018/1/9.
@@ -147,6 +151,13 @@ public class BaiduLocationHelper extends AbsLocationHelper {
             }
             locationInfo.setProvince(province);
             locationInfo.setCity(city);
+
+            List<Poi> pois= location.getPoiList();
+            List<String> poiStr=new ArrayList<>();
+            for (Poi poi:pois){
+                poiStr.add(poi.getName());
+            }
+
             mListener.location(locationInfo);
 
         }

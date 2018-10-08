@@ -2,6 +2,8 @@ package com.wind.location;
 
 import android.content.Context;
 
+import java.util.List;
+
 /**
  * Created by wind on 2018/1/2.
  */
@@ -72,6 +74,7 @@ public abstract class AbsLocationHelper {
         private double longitude;
         private String province;
         private String city;
+        private List<String> pois;
 
         public double getLatitude() {
             return latitude;
@@ -103,6 +106,14 @@ public abstract class AbsLocationHelper {
 
         public void setCity(String city) {
             this.city = city;
+        }
+
+        public List<String> getPois() {
+            return pois;
+        }
+
+        public void setPois(List<String> pois) {
+            this.pois = pois;
         }
     }
 }
