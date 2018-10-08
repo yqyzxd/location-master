@@ -59,6 +59,7 @@ public class GaoDeLocationHelper extends AbsLocationHelper {
         } else {
             mLocationClientOption.setOnceLocation(true);//只定位一次
             mLocationClientOption.setNeedAddress(true);//需要解析地址
+
         }
 
 

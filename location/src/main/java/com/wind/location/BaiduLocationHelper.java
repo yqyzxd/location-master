@@ -72,6 +72,8 @@ public class BaiduLocationHelper extends AbsLocationHelper {
         }else {
             option.setScanSpan(0);
             option.setIsNeedAddress(true);
+            option.setIsNeedLocationPoiList(true);
+            option.setIsNeedLocationDescribe(true);
             //可选，设置发起定位请求的间隔，int类型，单位ms
 //如果设置为0，则代表单次定位，即仅定位一次，默认为0
 //如果设置非0，需设置1000ms以上才有效

@@ -30,7 +30,7 @@ ext {
     userOrg = 'yqyzxd' ////bintray.com用户名
     groupId = 'com.wind'
     uploadName = 'location'
-    publishVersion = '1.0.0'
+    publishVersion = '1.0.1'
     desc = 'location'
     website = 'https://github.com/yqyzxd/location-master'
     licences = ['Apache-2.0']
